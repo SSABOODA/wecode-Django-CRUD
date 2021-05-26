@@ -14,8 +14,12 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
-from django.urls import path
+from django.urls import path, include
 
 urlpatterns = [
-
+    # path('owners', include('owners.urls'))
+    path('owners', include('owners.urls'))
 ]
+
+# localhost:8000/owners
+# include 해당경로로 보내주는 함수?
